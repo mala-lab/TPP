@@ -22,3 +22,13 @@ To get the results on CoraFull and Arxiv, just run the following command:
 
 ## Acknowledgment
 This code is implemented based on [CGLB](https://github.com/QueuQ/CGLB/tree/master). Please refer to CGLB for more baselines and implementation details.
+
+## Citation
+Please acknowledge our work via the following bibliography if you find our work/code useful:
+```bibtex
+@article{niu2024replay,
+  title={Replay-and-Forget-Free Graph Class-Incremental Learning: A Task Profiling and Prompting Approach},
+  author={Niu, Chaoxi and Pang, Guansong and Chen, Ling and Liu, Bing},
+  journal={arXiv preprint arXiv:2410.10341},
+  year={2024}
+}
