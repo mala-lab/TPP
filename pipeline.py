@@ -116,7 +116,7 @@ def pipeline_class_IL_no_inter_edge(args, valid=False):
                     taskid = 0
                 label_offset1, label_offset2 = task_manager.get_label_offset(int(taskid) - 1)[1], task_manager.get_label_offset(int(taskid))[1]
                 labels = labels - label_offset1
-            output = life_model_ins.getpred(subgraph, features, task)
+            output = life_model_ins.getpred(subgraph, features, taskid)
             acc = evaluatewp(output, labels, test_ids, cls_balance=args.cls_balance, ids_per_cls=ids_per_cls_test)
             acc_matrix[task][t] = round(acc*100,2)
             acc_mean.append(acc)
